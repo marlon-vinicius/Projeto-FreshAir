@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    position: absolute;
+    width: 306px;
+    height: 155px;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%);
+}
+
+#login {
+    width: 624px;
+    height: 623px;
+    background-color: #CCCCCC;
+    border-radius: 30px;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 31px;   
+}
+
+.login-texto {
+    width: 490px;
+    height: 82px;
+    font-size: 64px;
+    color: #0077B3;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 48px;
+    left: 67px;    
+}
+
+input {
+    width: 490px;
+    height: 68px;
+    border-radius: 10px;
+    border: none;    
+}
+
+input::placeholder {
+    font-family: Roboto;
+    font-size: 32px;
+    color: rgba(128, 128, 128, 0.5);
+    margin-left: 15px;
+}
+
+.input-usuario {
+    position: absolute;
+    top: 231px;
+    left: 67px;
+}
+
+.input-senha {
+    position: absolute;
+    top: 370px;
+    left: 67px;
+}
+
+#button {
+    width: 182px;
+    height: 67px;
+    background-color: #0077B3;
+    color: white;
+    font-size: 32px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+.botoes-login {
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 483px;
+    left: 67px;
+}
