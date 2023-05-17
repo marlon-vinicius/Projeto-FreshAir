@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
 }
 
 header {
@@ -121,4 +122,49 @@ header input::placeholder {
     color: rgba(128, 128, 128, 0.5);
     top: 15px;
     left: 15px;
+}
+
+.filtro {
+    position: absolute;
+    width: 304px;
+    height: 843px;
+    left: 28px;
+    top: 181px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.filtro  .tipo {
+    background-color: aqua;
+    width: 304px;
+    height: 68px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.check input {
+    display: none;
+}
+
+.check input + label:before {
+    content: '';    
+    width: 24px;
+    height: 24px;
+    border: 2px solid #808080 ;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 19px 19px 19px 2px;
+}
+
+.check input:checked + label:before {
+    background-color: #000000;
 }

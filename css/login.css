@@ -9,110 +9,223 @@ body {
     background-color: #f2f2f2;
 }
 
-#logo {
-    position: absolute;
-    width: 306px;
-    height: 155px;
-    left: 50%;
-    top: 15px;
-    transform: translate(-50%);
+@media screen and (min-height: 850px) {
+
+    #logo {
+        position: absolute;
+        width: 200px;
+        height: 120px;
+        left: 50%;
+        top: 15px;
+        transform: translate(-50%);
+    }
+
+    #login {
+        width: 624px;
+        height: 623px;
+        background-color: #ccccccc5;
+        border-radius: 30px;
+        box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-top: 31px;   
+    }
+
+    .login-texto {
+        width: 490px;
+        height: 82px;
+        font-size: 64px;
+        color: #0077B3;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 48px;
+        left: 67px;    
+    }
+
+    input {
+        width: 430px;
+        height: 68px;
+        border-radius: 10px;
+        border: none; 
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #162938;
+        padding: 0 45px 0 15px;  
+    }
+
+    input::placeholder {
+        position: absolute;
+        font-family: 'Roboto';
+        font-size: 32px;
+        color: rgba(128, 128, 128, 0.5);
+        top: 15px;
+        left: 15px;
+    }
+
+    .input-usuario {
+        position: absolute;
+        top: 231px;
+        left: 67px;
+    }
+
+    .input-senha {
+        position: absolute;
+        top: 370px;
+        left: 67px;
+    }
+
+    .icon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 13px;
+        top: 19px;
+    }
+
+    #button {
+        width: 182px;
+        height: 67px;
+        background-color: #0077B3;
+        color: white;
+        font-size: 32px;
+        border-radius: 30px;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 10px 10px #6363638a;
+    }
+
+    #button:hover {
+        background-color: rgb(35, 182, 255);
+        cursor: pointer;
+    }
+
+    .botoes-login {
+        width: 490px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 483px;
+        left: 67px;
+    }
+
+    .botoes-login a {
+        text-decoration: none;
+        color: white;
+    }
+
 }
 
-#login {
-    width: 624px;
-    height: 623px;
-    background-color: #ccccccc5;
-    border-radius: 30px;
-    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 31px;   
-}
+@media screen and (max-height: 850px) {
 
-.login-texto {
-    width: 490px;
-    height: 82px;
-    font-size: 64px;
-    color: #0077B3;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 48px;
-    left: 67px;    
-}
-
-input {
-    width: 430px;
-    height: 68px;
-    border-radius: 10px;
-    border: none; 
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #162938;
-    padding: 0 45px 0 15px;  
-}
-
-input::placeholder {
-    position: absolute;
-    font-family: 'Roboto';
-    font-size: 32px;
-    color: rgba(128, 128, 128, 0.5);
-    top: 15px;
-    left: 15px;
-}
-
-.input-usuario {
-    position: absolute;
-    top: 231px;
-    left: 67px;
-}
-
-.input-senha {
-    position: absolute;
-    top: 370px;
-    left: 67px;
-}
-
-.icon {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 13px;
-    top: 19px;
-}
-
-#button {
-    width: 182px;
-    height: 67px;
-    background-color: #0077B3;
-    color: white;
-    font-size: 32px;
-    border-radius: 30px;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 32px;
-    box-shadow: 0px 10px 10px #6363638a;
-}
-
-#button:hover {
-    background-color: rgb(35, 182, 255);
-    cursor: pointer;
-}
-
-.botoes-login {
-    width: 490px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 483px;
-    left: 67px;
-}
-
-.botoes-login a {
-    text-decoration: none;
-    color: white;
+    #logo {
+        position: absolute;
+        width: 200px;
+        height: 120px;
+        left: 50%;
+        top: 15px;
+        transform: translate(-50%);
+    }
+    
+    #login {
+        width: 500px;
+        height: 500px;
+        background-color: #ccccccc5;
+        border-radius: 30px;
+        box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-top: 31px;   
+    }
+    
+    .login-texto {
+        width: 392px;
+        height: 82px;
+        font-size: 51px;
+        color: #0077B3;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 38px;
+        left: 53px;    
+    }
+    
+    input {
+        width: 344px;
+        height: 54px;
+        border-radius: 10px;
+        border: none; 
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #162938;
+        padding: 0 36px 0 12px;  
+    }
+    
+    input::placeholder {
+        position: absolute;
+        font-family: 'Roboto';
+        font-size: 26px;
+        color: rgba(128, 128, 128, 0.5);
+        top: 12px;
+        left: 12px;
+    }
+    
+    .input-usuario {
+        position: absolute;
+        top: 185px;
+        left: 54px;
+    }
+    
+    .input-senha {
+        position: absolute;
+        top: 296px;
+        left: 54px;
+    }
+    
+    .icon {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 10px;
+        top: 15px;
+    }
+    
+    #button {
+        width: 145px;
+        height: 54px;
+        background-color: #0077B3;
+        color: white;
+        font-size: 26px;
+        border-radius: 30px;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0px 10px 10px #6363638a;
+    }
+    
+    #button:hover {
+        background-color: rgb(35, 182, 255);
+        cursor: pointer;
+    }
+    
+    .botoes-login {
+        width: 392px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 386px;
+        left: 54px;
+    }
+    
+    .botoes-login a {
+        text-decoration: none;
+        color: white;
+    }    
 }
