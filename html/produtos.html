@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="../css/produtos.css">
     <title>Produtos</title>
 </head>
 <body>
-    <header>
-        <div class="left">
-            <a href="../index.html"><img src="../img/logo-transparente.png" alt="imagem logo"></a>
-        </div>
-        <div class="busca">
-            <input class="campoBuscar" type="text" placeholder="Buscar produto">
-            <img class="searchIcon" src="../assets/search.png" alt="">
-        </div>
-        <div class="produto">
-            <a href="">Meu Produto</a>            
-        </div>
-        <div class="shopIcon">
-            <img src="../assets/shopping-cart.png" alt=""> 
-        </div>
-    </header>
-    <div class="filtro">
-        <h3 class="tipo"> Tipo do produto </h3>
-        <div class="check">
-            <input id="checkbox" type="checkbox">
-            <label for="checkbox">{{ tipo }}</label>
-        </div> 
-        <h3 class="modelo"> Modelo </h3> 
-        <div class="check">
-            <input id="checkbox2" type="checkbox">
-            <label for="checkbox2">{{ modelo }}</label>
-        </div>       
+    <div id="app">
+        <header>
+            <div class="left">
+                <a href="../index.html"><img src="../img/logo-transparente.png" alt="imagem logo"></a>
+            </div>
+            <div class="busca">
+                <input class="campoBuscar" type="text" placeholder="Buscar produto">
+                <img class="searchIcon" src="../assets/search.png" alt="">
+            </div>
+            <div class="meuProduto">
+                <a href="#">Meu Produto</a>            
+            </div>
+            <div class="shopIcon">
+                <img src="../assets/shopping-cart.png" alt=""> 
+            </div>
+        </header>
+        <div class="filtro">
+            <h3 class="tipo"> Tipo do produto </h3>
+            <div class="check" v-for="produto in produtos">
+                <input class="checkbox" :id="produto.nome" type="checkbox"> 
+                <label :for="produto.nome" >{{ produto.nome }}</label>
+            </div>
+       
+            <h3 class="modelo"> Modelo </h3> 
+            <div class="check" v-for="modelo in modelos">
+                <input class="checkbox" :id="modelo.nome" type="checkbox">
+                <label :for="modelo.nome">{{ modelo.nome }}</label>
+            </div>       
     </div>
 </body>
+
+<script src="../script/produtos.js"></script>
+
 </html>
