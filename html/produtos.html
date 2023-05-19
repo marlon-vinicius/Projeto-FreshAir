@@ -25,18 +25,35 @@
                 <img src="../assets/shopping-cart.png" alt=""> 
             </div>
         </header>
-        <div class="filtro">
-            <h3 class="tipo"> Tipo do produto </h3>
-            <div class="check" v-for="produto in produtos">
-                <input class="checkbox" :id="produto.nome" type="checkbox"> 
-                <label :for="produto.nome" >{{ produto.nome }}</label>
-            </div>
+        <main>
+            <div class="filtro">
+                <h3 class="tipo"> Tipo do produto </h3>
+                <div class="check" v-for="filter in filters">
+                    <input class="checkbox" :id="filter.nome" type="checkbox"> 
+                    <label :for="filter.nome" >{{ filter.nome }}</label>
+                </div>
        
-            <h3 class="modelo"> Modelo </h3> 
-            <div class="check" v-for="modelo in modelos">
-                <input class="checkbox" :id="modelo.nome" type="checkbox">
-                <label :for="modelo.nome">{{ modelo.nome }}</label>
-            </div>       
+                <h3 class="modelo"> Modelo </h3> 
+                <div class="check" v-for="produto in produtos">
+                    <input class="checkbox" :id="produto.nome" type="checkbox">
+                    <label :for="produto.nome">{{ produto.nome }}</label>
+                </div> 
+            </div>
+            
+            <div class="listagem">
+                
+                <section class="nome-produto">
+                    <h3>Ventiladores de mesa</h3>
+                </section>
+
+                <section v-for="produto in produtos" class="produtos">
+                    <div class="conteudo">
+                        <img class="" :src="produto.img" alt="">
+                        <h2 class="nome">{{ produto.nome }}</h2>
+                    </div>
+                </section>
+            </div>
+        </main>       
     </div>
 </body>
 
