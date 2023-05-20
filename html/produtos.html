@@ -41,14 +41,14 @@
             </div>
             
             <div class="listagem">                
-                <section class="nome-produto">
-                    <h3>Ventiladores de mesa</h3>
+                <section class="nome-listagem">
+                    <h3>Smart Ventiladores</h3>
                 </section>
                 <section class="produtos">
                     <div v-for="produto in produtos" class="conteudo">
                         <img class="imagem-produto" :src="produto.img" alt="">
-                        <h3 class="nome">{{ produto.nome }}</h3>
-                        <h2>R$ xxx,xx</h2>
+                        <h3 class="nome-produtos">{{ produto.nome }}</h3>
+                        <h2 class="preco">R$ xxx,xx</h2>
                     </div>
                 </section>
             </div>
