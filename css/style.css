@@ -11,7 +11,6 @@ body {
 }
 
 header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -109,7 +108,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     padding: 1.5rem;
-    background-color: #e0e0e0;
+    background-color: #f0f0f0;
 }
 
 .sobre .esquerda{
@@ -150,7 +149,7 @@ header {
 }
 
 footer{
-    background-color: #727272;
+    background-color: #0077b3cc;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -9,7 +9,7 @@
     <title>Produtos</title>
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="page-container">
         <header>
             <div class="left">
                 <a href="../index.html"><img src="../img/logo-transparente.png" alt="imagem logo"></a>
@@ -48,11 +48,27 @@
                     <div v-for="produto in produtos" class="conteudo">
                         <img class="imagem-produto" :src="produto.img" alt="">
                         <h3 class="nome-produtos">{{ produto.nome }}</h3>
-                        <h2 class="preco">R$ xxx,xx</h2>
+                        <h2 class="preco"><span style="color: #0bc005" >R$ 111,11</span>  à vista</h2>
+                        <h3>ou</h3>
+                        <h4>5x de R$ 22,22</h4>
                     </div>
                 </section>
             </div>
-        </main>       
+        </main> 
+       
+        <footer>
+            <img src="../img/Logo-transparente.png" alt="">          
+            <div>
+                <h4>Endereço</h4>
+                <h5>R. Irênio Greco, 4580 - Vila Imperador, Franca - SP</h5>
+            </div>
+            <div>
+                <h4>Contatos</h4>
+                <h5>(16) 3702-3204</h5>
+            </div>
+        </footer>
+        
+        
     </div>
 </body>
 

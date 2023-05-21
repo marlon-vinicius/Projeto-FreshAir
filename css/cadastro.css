@@ -20,12 +20,12 @@ body {
         transform: translate(-50%);
     }
 
-    #login {
+    #cadastro {
         width: 624px;
         height: 623px;
         background-color: #ccccccc5;
         border-radius: 30px;
-        box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
+        box-shadow:10px 10px 20px 10px rgba(0, 0, 0, 0.3);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -33,7 +33,7 @@ body {
         margin-top: 31px;   
     }
 
-    .login-texto {
+    .cadastro-texto {
         width: 490px;
         height: 82px;
         font-size: 64px;
@@ -104,7 +104,7 @@ body {
         cursor: pointer;
     }
 
-    .botoes-login {
+    .botoes-cadastro {
         width: 490px;
         display: flex;
         justify-content: center;
@@ -113,7 +113,7 @@ body {
         left: 67px;
     }
 
-    .botoes-login a {
+    .botoes-cadastro a {
         text-decoration: none;
         color: white;
     }
@@ -131,12 +131,12 @@ body {
         transform: translate(-50%);
     }
     
-    #login {
+    #cadastro {
         width: 500px;
         height: 500px;
         background-color: #ccccccc5;
         border-radius: 30px;
-        box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -144,7 +144,7 @@ body {
         margin-top: 31px;   
     }
     
-    .login-texto {
+    .cadastro-texto {
         width: 392px;
         height: 82px;
         font-size: 51px;
@@ -215,7 +215,7 @@ body {
         cursor: pointer;
     }
     
-    .botoes-login {
+    .botoes-cadastro {
         width: 392px;
         display: flex;
         justify-content: center;
@@ -224,7 +224,7 @@ body {
         left: 54px;
     }
     
-    .botoes-login a {
+    .botoes-cadastro a {
         text-decoration: none;
         color: white;
     }    
